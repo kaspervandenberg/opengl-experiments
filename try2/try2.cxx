@@ -46,9 +46,9 @@ int init_resources(void)
 	const char* fs_source {
 		"#version 120\n"
 		"void main(void) {								\n"
-		"	gl_FragColor[0] = 0.0;						\n"
-		"	gl_FragColor[1] = 0.0;						\n"
-		"	gl_FragColor[2] = 1.0;						\n"
+		"	gl_FragColor[0] = gl_FragCoord.x / 640.0;	\n"
+		"	gl_FragColor[1] = gl_FragCoord.y / 480.0;	\n"
+		"	gl_FragColor[2] = 0.5;						\n"
 		"}												\n"
 	};
 	glShaderSource(fragment_shader, 1, &fs_source, nullptr);
@@ -91,7 +91,10 @@ void onDisplay()
 	GLfloat triangle_vertexes[] {
 		0.0, 0.8,
 		-0.8, -0.8,
-		0.8, 0.8
+		0.8, 0.8,
+		0.8, 0.6,
+		-0.6, -0.8,
+		0.6, -0.8
 	};
 	/* Describe our vertices array to OpenGL (it can't guess its format 
 	 * automatically) */
@@ -105,7 +108,7 @@ void onDisplay()
 	);
 
 	/* Push each element in triangle_vertexes to the vertex shader */
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawArrays(GL_TRIANGLES, 0, 6);
 	glDisableVertexAttribArray(attribute_coord2d);
 
 	/* Display the result */
