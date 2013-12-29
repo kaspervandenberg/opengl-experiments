@@ -7,10 +7,10 @@ add_executable ( Try2
 
 set (CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++11")
 
-include ( useX11 )
-include ( useOpenGL )
-include  ( useGLUT )
-include ( useGLEW )
+include ( use_X11 )
+include ( use_OpenGL )
+include  ( use_GLUT )
+include ( use_GLEW )
 
 target_link_libraries ( Try2
 	${LIBS}

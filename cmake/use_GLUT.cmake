@@ -1,4 +1,4 @@
-# useGLUT
+# use_GLUT
 # use OpenGL Utility Toolkit, a Window sytem independent toolkit for writing 
 # OpenGL programs
 #

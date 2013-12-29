@@ -5,8 +5,8 @@ add_executable ( Try1
 	try1.cxx
 )
 
-include ( useX11 )
-include ( useOpenGL )
+include ( use_X11 )
+include ( use_OpenGL )
 
 target_link_libraries ( Try1
 	${LIBS}

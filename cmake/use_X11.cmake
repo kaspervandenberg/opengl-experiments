@@ -1,4 +1,4 @@
-# useX11
+# use_X11
 # Use X11 window system
 #
 # Post conditions:

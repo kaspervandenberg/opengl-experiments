@@ -1,4 +1,4 @@
-# useOpenGL
+# use_OpenGL
 # Use OpenGL 3D graphics rendering library
 #
 # Post conditions:

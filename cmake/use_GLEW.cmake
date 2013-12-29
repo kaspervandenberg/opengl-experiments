@@ -1,4 +1,4 @@
-# useGLEW
+# use_GLEW
 # use the OpenGL Extension Wrangler, GLEW for short, is a library that
 # handles initialization of OpenGL extensions in a portable and simple
 # way.
