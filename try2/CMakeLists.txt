@@ -5,8 +5,6 @@ add_executable ( Try2
 	try2.cxx
 )
 
-set (CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++11")
-
 include ( use_X11 )
 include ( use_OpenGL )
 include  ( use_GLUT )
